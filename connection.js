@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
 
 const url =
-  "mongodb+srv://shivamsingh97719:DSksyReRiaLXQeQG@cluster0.a8xoxhg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-";
+  process.env.MONGOURL;
 
 const connection = async () => {
   return mongoose.connect(url);
